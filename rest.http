@@ -1,0 +1,8 @@
+##### APIs
+
+### root API
+GET http://localhost:8000/
+
+
+### Get Products
+GET http://localhost:8000/api/products
