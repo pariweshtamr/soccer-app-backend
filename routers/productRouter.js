@@ -8,10 +8,7 @@ Router.get('/', (req, res) => {
 })
 
 Router.get('/:id', (req, res) => {
-  console.log(req.params.id, 'from router')
-  const product = products.filter((x) => x._id === Number(req.params.id))
-
-  console.log(products)
+  const product = products.filter((x) => x._id === req.params.id)
 
   if (product) {
     res.send(product)
