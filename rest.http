@@ -5,4 +5,8 @@ GET http://localhost:8000/
 
 
 ### Get Products
-GET http://localhost:8000/api/products
+GET http://localhost:8000/api/v1/product/
+
+### Get a single product by id
+GET http://localhost:8000/api/v1/product/1
+
