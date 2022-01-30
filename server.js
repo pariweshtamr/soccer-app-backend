@@ -15,9 +15,11 @@ app.use(cors())
 
 //IMPORT ROUTERS
 import productRouter from './routers/productRouter.js'
+import cartRouter from './routers/cartRouter.js'
 
 //USE ROUTERS
 app.use('/api/v1/product', productRouter)
+app.use('/api/v1/cart', cartRouter)
 
 app.use('/', (req, res) => {
   res.json('Server is ready')
