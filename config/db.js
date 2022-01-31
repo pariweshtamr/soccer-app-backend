@@ -7,7 +7,9 @@ const mongoClient = async () => {
     )
   }
   try {
-    const connectionString = await mongoose.connect(process.env.MONGO_CLIENT)
+    const connectionString = await mongoose.connect(
+      process.env.MONGO_CLIENT || 'mongodb://localhost/Sports_House',
+    )
     if (connectionString) {
       return console.log('MongoDB Connected')
     }
