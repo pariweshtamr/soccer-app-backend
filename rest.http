@@ -10,3 +10,12 @@ GET http://localhost:8000/api/v1/product/
 ### Get a single product by id
 GET http://localhost:8000/api/v1/product/1
 
+
+### Create new user
+POST http://localhost:8000/api/v1/user/signin
+Content-Type: application/json
+
+{
+    "email": "admin@example.com",
+    "password": "1234"
+}
