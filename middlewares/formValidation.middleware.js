@@ -1,6 +1,6 @@
 import Joi from 'joi'
 
-const shortstr = Joi.string().max(30).alphanum().required()
+const shortstr = Joi.string().max(30).required()
 const plainShortStr = Joi.string().max(20).required()
 const id = Joi.string().max(30)
 const email = Joi.string()
@@ -11,7 +11,7 @@ const shortStrNull = Joi.string().max(30).allow(null).allow('')
 const password = Joi.string().min(7).max(30).required()
 
 export const createUserValidation = (req, res, next) => {
-  // se3rver validation
+  // server validation
   const schema = Joi.object({
     name: shortstr,
     email: email,

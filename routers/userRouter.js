@@ -52,7 +52,6 @@ userRouter.post(
 
 userRouter.post(
   '/register',
-  createUserValidation,
   expressAsyncHandler(async (req, res) => {
     try {
       const hashPass = hashPassword(req.body.password)
