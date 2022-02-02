@@ -12,6 +12,27 @@ GET http://localhost:8000/api/v1/product/1
 
 
 ### Create new user
+POST http://localhost:8000/api/v1/user/register
+Content-Type: application/json
+
+{
+    "name": "Nik",
+    "email": "user@gmail.com",
+    "password": "1234567"
+}
+
+##### Email APIs
+
+### verify user email
+PATCH http://localhost:8000/api/v1/user/email-verification
+Content-Type: application/json
+
+{
+    "pin": "092466",
+    "email": "user@gmail.com"
+}
+
+### Sign in user
 POST http://localhost:8000/api/v1/user/signin
 Content-Type: application/json
 

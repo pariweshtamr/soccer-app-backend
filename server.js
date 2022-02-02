@@ -14,7 +14,7 @@ mongoClient()
 
 // Middlewares
 app.use(express.json())
-app.use(express.urlencoded({ extended: true }))
+app.use(express.urlencoded())
 app.use(cors())
 
 //IMPORT ROUTERS

@@ -1,7 +1,6 @@
 import express from 'express'
 const productRouter = express.Router()
 import expressAsyncHandler from 'express-async-handler'
-import { products } from '../data.js'
 import Product from '../models/Product/Product.schema.js'
 
 productRouter.get(
